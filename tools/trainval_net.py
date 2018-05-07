@@ -88,6 +88,16 @@ def combined_roidb(imdb_names):
 if __name__ == '__main__':
   args = parse_args()
 
+  args.imdb_name = 'coco_2014_train+coco_2014_valminusminival'
+  args.imdb_name = 'coco_2014_valminusminival'
+  args.imdbval_name = 'coco_2014_minival'
+  args.max_iters = 650000
+  args.tag = 'resnet'
+  args.net = 'res101'
+  args.cfg_file = '/home/yanchao/tf-faster-rcnn/experiments/cfgs/res101.yml'
+  args.weight = '/home/yanchao/tf-faster-rcnn/data/imagenet_weights/res101.ckpt'  # /home/yanchao/MyProjects/tf-faster-rcnn/data/imagenet_weights/vgg16.ckpt
+  args.set_cfgs = []
+
   print('Called with args:')
   print(args)
 
