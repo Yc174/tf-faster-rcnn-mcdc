@@ -1,1 +1,5 @@
-1.lib.dataset.factory修改
+1.lib.datasets.factory修改
+2.lib.datasets.mcdc
+3.lib.datasets._init_paths
+4.创建软链接 mcdc_data/train/ --> tf-faster-rcnn/data
+5._load_coco_annotation中的self._COCO.getAnnIds可以修改选类信息
